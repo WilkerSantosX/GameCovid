@@ -1,0 +1,59 @@
+.container {
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container #game{
+    display: flex;
+    justify-content: center;
+}
+
+.container canvas{
+    border-radius: 4px;
+}
+
+.container .buttons, .container .menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.container .menu button:first-child{
+    margin-right: 1rem;
+}
+
+.container button {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    background: #452bd6;
+    transition: filter 0.2s;
+    padding: 20px 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container button:hover {
+    filter: brightness(0.9);
+}
+
+.container button#restart{
+    background: var(--blue);
+}
+.container button#menu{
+    background: var(--red);
+}

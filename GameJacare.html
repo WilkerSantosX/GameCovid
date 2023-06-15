@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        canvas {
+            border: 1px solid #d3d3d3;
+            background-color: #f1f1f1;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Use o botão UP para levar a vacina ao povo da aldeia.</h3>
+        <div id="game"></div>
+        <div class="buttons">
+            <button onmousedown="accelerate(-0.2)" ontouchstart="accelerate(-0.2)" onmouseup="accelerate(0.05)"
+                ontouchend="accelerate(0.05)">UP</button>
+        </div>
+        <div class="menu">
+            <button id="restart" onclick="window.location.href='GameJacare.html'">RESTART</button>
+            <button id="menu" onclick="window.location.href='Start.html'">MENU</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/jacare.js"></script>
+    <script>
+        $(document).ready(function () {
+            startGame();
+        });
+    </script>
+</body>
+
+</html>
